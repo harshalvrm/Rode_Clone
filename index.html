@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-        theme: {
-            screens: {
-                'sm': '640px',
-                // => @media (min-width: 640px) { ... }
-
-                'md': '1024px',
-                // => @media (min-width: 1024px) { ... }
-
-                'lg': '1280px',
-                // => @media (min-width: 1280px) { ... }
-
-                'lg': '1280px',
-                // => @media (min-width: 1280px) { ... }
+          theme: {
+            screens:{
+                'sm': '480px',
+                'md': '768px',
+                'lg': '1024px',
+                'xl': '1280px',
+                '2xl': '1536px',
             },
-
             colors: {
-                'Rode': '#002970',
+                'paytmDark': '#002970',
+                'paytmLight': '#00BAF2',
             },
 
             fontFamily: {
-                'rodeOne': ['peignot', 'sans-serif','Helvetica', 'Arial',]
-                'rode': ['futura', 'sans-serif','Helvetica', 'Arial',]
+                'paytm': ['Inter', 'sans-serif','Helvetica', 'Arial',]   
             }
+          }
+
         }
-        }
-  </script>
+      </script>
+
+
     <title>RØDE Microphones | Premium Microphones & Audio Equipment</title>
 </head>
-<body>
-      <h1 class="text-3xl font-bold underline font-[peignot]]">
+    
+<body class="bg-paytmDark">
+      <h1 class="text-4xl text-rodeCol lg:text-3xl font-bold underline">
     Hello world!
   </h1>
 </body>
